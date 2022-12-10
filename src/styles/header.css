@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Fira+Code:wght@600&family=Oxygen:wght@700&family=Patua+One&family=Sansita+Swashed:wght@500&display=swap');
+
+.header{
+  z-index: 30;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0 50px;
+  font-size: 1.2rem;
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Fira Code', monospace;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+.header-nav{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+
+.header-nav-logo{
+  color: #131418;
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Fira Code', monospace;
+  font-family: 'Oxygen', sans-serif;
+  font-family: 'Patua One', cursive;
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 2rem;
+}
+.header-nav-menu{
+  font-size: 2.2rem;
+  fill: #131418;
+}
+
+.header-nav-list{
+  background-color: #131418;
+  padding: 20px 40px;
+  border-radius: 12px;
+  position: absolute;
+  font-size:1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  right: -220px;
+  top: 80px;
+  opacity: 0;
+}
+.header-boxSelect{
+  display: none;
+}
+
+@media screen and (min-width:800px) {
+  .header-boxSelect{
+    position: absolute;
+    display: block;
+    width: 74px;
+    height: 5px;
+    background-color: #131418;
+    overflow-y: 36;
+    left: 0;
+    bottom: 0;
+    transform: translateY(36px) ;
+    border-radius: 30px;
+  }
+  .header-nav-menu{
+    display: none;
+  }
+  .header-nav-list{
+    position: relative;
+    opacity: 1 ;
+    right: 0 !important;
+    flex-direction: row;
+    top: 0 !important;
+    background-color: transparent;
+    gap: 30px;
+    padding: 0;
+  }
+  .header-nav-list li a{
+    color: #131418;
+    font-size: 1.6rem;
+  }
+}

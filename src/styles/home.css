@@ -1,0 +1,79 @@
+.home{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-fondo{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: contrast(114%);
+}
+.home-title{
+  max-width: 460px;
+  text-align: center;
+}
+.home-title h1{
+  font-size:3rem;
+  font-family: 'Fira Code', monospace;
+  font-family: 'Oxygen', sans-serif;
+  font-family: 'Patua One', cursive;
+}
+.home-temp{
+  position: absolute;
+  bottom: 10px;
+  padding:10px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  align-items: center;
+}
+.home-temp span{
+  color: #a8a7a7;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Fira Code', monospace;
+  font-family: 'Oxygen', sans-serif;
+}
+.home-temp-num span{
+  font-size: 2rem;
+  margin-left: 18px;
+}
+.home-temp-num-icon{
+  fill: #a8a7a7;
+  font-size: 2rem;
+}
+
+@media screen and (min-width:800px) {
+  .home{
+    justify-content: flex-start;
+  }
+  .home-title{
+    max-width: 600px;
+    text-align: left;
+  }
+  .home-title h1{
+    font-size: 5rem;
+  }
+  .home-temp{
+    right: 0px;
+    margin-bottom: 30px;
+    align-items: flex-end;
+  }
+  .home-temp span{
+    font-size: 1.1rem;
+  }
+  .home-temp-num-icon{
+    font-size: 2rem;
+  }
+  .home-temp-num span{
+    font-size: 2rem;
+  }
+}

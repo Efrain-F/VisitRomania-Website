@@ -1,0 +1,73 @@
+.footer{
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 2px solid #a8a7a7;
+  gap: 20px;
+}
+.footer-name{
+}
+.footer-name h4{
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Fira Code', monospace;
+  font-family: 'Oxygen', sans-serif;
+  font-family: 'Patua One', cursive;
+  font-family: 'Sansita Swashed', cursive;
+  color: #f7fbf8;
+}
+.footer-name span{
+  color: #6b6b6b;
+}
+
+
+.footer-table{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.footer-table-colm{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer-table-colm h5{
+  font-size: 1rem;
+  color: #f7fbf8;
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Fira Code', monospace;
+  font-family: 'Oxygen', sans-serif;
+}
+.footer-table-colm span{
+  color: #6b6b6b;
+}
+.footer-table-colm a{
+  color: #6b6b6b;
+}
+
+@media screen and (min-width:500px) {
+  .footer{
+    flex-direction: row;
+  }
+  .footer-table{
+    flex-direction: row;
+  }
+}
+@media screen and (min-width:800px) {
+  .footer-table{
+    gap: 50px;
+  }
+  .footer-name h4{
+    font-size: 1.5rem;
+  }
+  .footer-table-colm h5{
+    font-size: 1.1rem;
+  }
+}
